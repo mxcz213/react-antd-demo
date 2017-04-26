@@ -1,0 +1,55 @@
+html{
+	font-size: 50px;
+}
+body{
+	width:7.5rem;
+}
+#mobile-header{
+	flex:1;
+	background: #f6f6f6;
+}
+#mobile-header header{
+	border-bottom: 1px solid #2db7f5;
+}
+#mobile-header header img{
+	width: 2.4rem;
+}
+#mobile-header .seting-icon{
+	float: right;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.64rem;
+    color: #2db7f5;
+}
+.mobile_newslist_ul li{
+	margin:0.3rem auto;
+}
+.mobile-list-img{
+    height: 1.4rem;
+	overflow: hidden;
+    margin-right: 0.1rem;
+}
+.mobile-news-title{
+	font-size: 0.28rem;
+	margin-bottom: 0.1rem;
+	font-weight: bold;
+}
+.mobile-news-count{
+	float: right;
+}
+.mobile-news-detail{
+	margin-top:0.4rem;
+}
+.mobile-news-detail img{
+	width: 100%;
+}
+.article-title h1{
+	font-size: 0.32rem;
+}
+.mobile-back{
+	font-size: 0.5rem;
+    color: #2db7f5;
+}
+.common-list .ant-card{
+	margin-bottom: 20px;
+}
