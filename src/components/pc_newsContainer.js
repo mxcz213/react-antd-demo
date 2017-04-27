@@ -5,6 +5,7 @@ import CarouselImgNewsBlock from './carousel_imgnews';
 import PCnewsTextList from './pc_newsTextList';
 import PCleftNewsBlock from './pc_leftnews_block';
 import PCNewsImgBlock from './pc_news_imgblock';
+import YHJG from './yahoo_jg';
 
 export default class PCnewsContainer extends React.Component {
 
@@ -26,8 +27,9 @@ export default class PCnewsContainer extends React.Component {
 							<PCleftNewsBlock></PCleftNewsBlock>
 						</Col>
 						<Col span={12} className="news-main-content">
-							<PCNewsImgBlock type="yule" count={3}></PCNewsImgBlock>
-							<PCNewsImgBlock type="caijing" count={3}></PCNewsImgBlock>
+							<YHJG />
+							<PCNewsImgBlock type="yule" count={2}></PCNewsImgBlock>
+							<PCNewsImgBlock type="caijing" count={2}></PCNewsImgBlock>
 						</Col>
 						<Col span={6}>
 							<CarouselImgNewsBlock type="top" count={5} imgWidth="300"></CarouselImgNewsBlock>

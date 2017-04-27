@@ -13,7 +13,6 @@ export default class MobileNewsContainer extends React.Component{
 	}
 	
 	tabChange(key){
-		debugger;
 		this.setState({current:key});
 	}
 

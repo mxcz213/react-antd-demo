@@ -12,7 +12,9 @@ import { BrowserRouter, Router, HashRouter, Match, Route, Link, hashHistory, Ind
 import PCIndex from '../src/components/pc_index';
 import MobileIndex  from '../src/components/mobile_index';
 import PCnewsDtail from '../src/components/pc_news_detail';
+import PCUserCenter from '../src/components/pc_usercenter';
 import MobileDetail from '../src/components/mobile_news_detail';
+import MobileUsercenter from '../src/components/mobile_usercenter';
 
 import MediaQuery from 'react-responsive';
 
@@ -26,6 +28,7 @@ export default class Root extends React.Component{
 					<HashRouter history={hashHistory}>
 						<div>
 							<Route exact path="/" component={PCIndex}></Route>
+							<Route path="/usercenter" component={PCUserCenter}></Route>
 							<Route path="/detail/:uniquekey" component={PCnewsDtail}></Route>
 						</div>
 					</HashRouter>
@@ -34,6 +37,7 @@ export default class Root extends React.Component{
 					<HashRouter history={hashHistory}>
 						<div>
 							<Route exact path="/" component={MobileIndex}></Route>
+							<Route path="/usercenter" component={MobileUsercenter}></Route>
 							<Route path="/detail/:uniquekey" component={MobileDetail}></Route>
 						</div>
 					</HashRouter>

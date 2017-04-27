@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Menu, Icon, Modal, Form, Tabs, Input, Button, message, Dropdown} from 'antd';
+import { Link } from 'react-router-dom';
 
 const FormItem = Form.Item;
 const TabPane = Tabs.TabPane;
@@ -86,7 +87,9 @@ class MobileHeader extends React.Component {
 		const dropDownMenu = (
 			<Menu>
 				<MenuItem key="usercenter">
-					<Button type="dashed">个人中心</Button>
+					<Link to="usercenter">
+						<Button type="dashed">个人中心</Button>
+					</Link>
 				</MenuItem>
 				<MenuItem key="logout">
 					<Button type="primary" onClick={this.logout.bind(this)}>退出登录</Button>

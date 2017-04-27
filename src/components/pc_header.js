@@ -102,13 +102,15 @@ class PCHeader extends React.Component {
 
 		const userShow = this.state.hasLogined 
 			? <MenuItem key="logout" className="register">
+				<Link to="usercenter" className="a-inline-block">
 					<Button type="primary" htmlType="button">{this.state.userNikeName}</Button>
+				</Link>
 					&nbsp;&nbsp;
-					{/*<Link target="_blank">
+					{/*<Link to="/usercenter" target="_blank">
 						<Button type="dashed" htmlType="button">个人中心</Button>
-					</Link>*/}
-					&nbsp;&nbsp;
-					<Button type="ghost" htmlType="button" onClick={this.logout.bind(this)}>退出登录</Button>
+					</Link>
+					&nbsp;&nbsp;*/}
+				<Button type="ghost" htmlType="button" onClick={this.logout.bind(this)}>退出登录</Button>
 				</MenuItem> 
 			: 
 			<MenuItem key="register" className="register">
